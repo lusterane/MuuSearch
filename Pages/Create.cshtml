@@ -1,0 +1,13 @@
+﻿@page
+@model Task2_v2_0_0.Pages.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Enter your name:</h2>
+
+<form method="POST">
+    <div asp-validation-summary="All"></div>
+    <div>Name: <input asp-for="Customer.Name"/></div>
+    <input type="submit"/>
+</form>
