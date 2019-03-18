@@ -1,3 +1,3 @@
 # MuuSearch
 
-MuuSearch is a music search engine that utilizes Spotify Web API and developed in ASP.NET
+MuuSearch is a music search engine developed with ASP.NET that utilizes Spotify Web API
