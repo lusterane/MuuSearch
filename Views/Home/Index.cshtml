@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "MuuSearch";
+}
+
+
+<link rel="stylesheet" href="~/css/istyle.css">
+
+<img src="~/images/img_cow-silhouette-vector-26.png" width="100" />
+<form asp-action="SearchArtist">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="Name">Artist Name</label>
+                <input name="ArtistName" placeholder="Enter artist name" class="form-control" id="Name" />
+                <button type="submit">Search</button>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-md-3" style="width: 900px;">
+                <!--will implement into css file later, this is just test-->
+                <label for="Token">Enter your access token for Web API Authentication <b>[REQUIRED]</b></label>
+                <input name="access_token" placeholder="Enter access token" class="form-control" id="Token" />
+            </div>
+        </div>
+    </div>
+</form>

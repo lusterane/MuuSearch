@@ -1,0 +1,38 @@
+﻿@model IEnumerable<AlbumItem>
+
+@{
+    ViewData["Title"] = "SearchArtist";
+}
+
+<link rel="stylesheet" href="~/css/sastyle.css">
+    
+<img src="~/images/img_cow-silhouette-vector-26.png" width="100" />
+<div class="row">
+    <div>
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>Album Name</th>
+                <th>Artist Name</th>
+                <th>Release Date</th>
+                <th>Number of Tracks</th>
+                <th>Popularity</th>
+                <th>Album Photo</th>
+            </tr>
+            @foreach (var album in Model)
+            {
+            <tr>
+                <td>@album.name</td>
+                <td>@album.artists[0].name</td>
+                <td>@album.release_date</td>
+                <td>@album.total_tracks</td>
+                <td>N/a</td>
+                <td>
+                    <a href=@album.href>
+                        <img src=@album.images[1].url class="img-rounded">
+                    </a>
+                </td>
+            </tr>
+            }
+        </table>
+</div>
+</div>
